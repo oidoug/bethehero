@@ -4,15 +4,14 @@
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
-    "start": "node .",
-    "prestart": "yarn build",
+    "start": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+    "dev": "nodemon",
+    "prestart": "yarn test",
     "build": "webpack",
     "clear": "rm -r dist/* || true",
     "prebuild": "yarn clear && tslint -c tslint.json -p tsconfig.json --fix",
     "postbuild": "yarn test",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts",
-    "dev": "tsc",
-    "postdev": "node dist/index.js"
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
   "keywords": [
     "typescript",
@@ -38,6 +37,9 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
   }
 }

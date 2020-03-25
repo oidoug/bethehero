@@ -1,15 +1,10 @@
-import express from "express";
+import express from 'express';
+import cors from 'cors';
+import { routes } from './routes';
 
 const app = express();
-const port = 3333;
+app.use(cors());
+app.use(express.json());
+app.use(routes);
 
-app.get("/", (req, res) => {
-  res.json({
-    meme: 'cool',
-    something: 'something',
-  });
-});
-
-app.listen(port, () => {
-  console.log(`server started at http://localhost:${port}`);
-});
+app.listen(3333);
