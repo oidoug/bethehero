@@ -6,8 +6,8 @@ Thank you again Rocketseat for another Omnistack Week, they are always nice and 
 
 # Mobile screenshots
 
-<img src="https://user-images.githubusercontent.com/129619/77954837-a3b5ea80-72a5-11ea-9788-d47b7041abcb.png" width="45%"></img>
 <img src="https://user-images.githubusercontent.com/129619/77954830-a0bafa00-72a5-11ea-9438-e774ee09c96d.png" width="45%"></img>
+<img src="https://user-images.githubusercontent.com/129619/77954837-a3b5ea80-72a5-11ea-9788-d47b7041abcb.png" width="45%"></img>
 
 # WEB screenshots
 
