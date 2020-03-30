@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "mobile"
+		},
+		{
+			"path": "frontend"
+		},
+		{
+			"path": "backend"
+		}
+	],
+	"settings": {}
+}
